@@ -1,0 +1,65 @@
+/* ZENTO Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,900;1,700;1,900&family=Barlow:wght@400;600;700&display=swap');
+
+:root {
+  /* Zento Color Palette */
+  --c-orange: #FF6600; /* Energy, passion, appetite */
+  --c-orange-hover: #E65C00;
+  --c-black: #0A0C0C; /* Exact match to logo background */
+  --c-black-soft: #1A1A1A;
+  --c-black-mute: #2A2A2A;
+  --c-white: #FFFFFF;
+  --c-white-off: #F5F5F5;
+  --c-text-primary: #FFFFFF;
+  --c-text-secondary: #AAAAAA;
+  --c-border: #333333;
+  
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-xl: 32px;
+  
+  --font-main: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--c-black);
+  color: var(--c-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.brand-text {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: var(--c-orange);
+  color: var(--c-white);
+  border: none;
+  border-radius: var(--r-md);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--c-orange-hover);
+}
+
+.card {
+  background: var(--c-black-soft);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-md);
+  padding: 20px;
+}
