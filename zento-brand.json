@@ -1,0 +1,45 @@
+{
+  "brand": "ZENTO",
+  "tagline": "GRILL • DÜRÜM • MORE",
+  "colors": {
+    "primary_orange": "#FF6600",
+    "primary_white": "#FFFFFF",
+    "background_black": "#0A0C0C",
+    "text_grey": "#888888"
+  },
+  "logo_design": {
+    "layout": "Horizontal (Monogram on left, Wordmark on right)",
+    "monogram_badge": {
+      "shape": "Circle",
+      "background": "#0A0C0C",
+      "outer_ring": {
+        "style": "Two-tone split (50/50)",
+        "top_right_half": "#FF6600 (Orange)",
+        "bottom_left_half": "#FFFFFF (White)"
+      },
+      "inner_letter": {
+        "character": "Z",
+        "style": "Bold, Italic/Slanted",
+        "color": "#FFFFFF (White)"
+      }
+    },
+    "wordmark": {
+      "text": "ZENTO",
+      "font_style": "Bold, Heavy, Condensed, Straight (Not Italic)",
+      "color": "#FFFFFF (White)",
+      "special_features": {
+        "letter_E": "Top horizontal bar is Orange (#FF6600) with a small notch/cut."
+      }
+    },
+    "tagline_design": {
+      "text": "GRILL • DÜRÜM • MORE",
+      "font_style": "Small, Spaced out (Tracking), All Caps",
+      "color": "#FF6600 (Orange)",
+      "position": "Centered below the ZENTO wordmark"
+    }
+  },
+  "rules": {
+    "consistency": "This exact logo structure and color scheme MUST be used across all apps (POS, Kitchen, Web, Mobile).",
+    "background_blending": "The application background MUST match the logo's background (#0A0C0C) perfectly to avoid a 'pasted' look."
+  }
+}
