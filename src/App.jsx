@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import POSApp from './apps/pos/POSApp';
 import KitchenApp from './apps/kitchen/KitchenApp';
 import WebApp from './apps/web/WebApp';
+import OnlineStore from './apps/online/OnlineStore';
 import Logo from './components/Logo';
 
 function Portal() {
@@ -12,9 +13,10 @@ function Portal() {
           <Logo layout="stacked" size="lg" />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', width: '100%' }}>
-          <Link to="/pos" className="btn-primary" style={{ textDecoration: 'none' }}>Counter POS (iPad)</Link>
-          <Link to="/kitchen" className="btn-primary" style={{ textDecoration: 'none' }}>Kitchen / Orders (Tablet)</Link>
-          <Link to="/web" className="btn-primary" style={{ textDecoration: 'none', background: '#333' }}>Online Website</Link>
+          <Link to="/pos" className="btn-primary" style={{ textDecoration: 'none' }}>TPV Mostrador (iPad)</Link>
+          <Link to="/kitchen" className="btn-primary" style={{ textDecoration: 'none' }}>Cocina / Pedidos (Tablet)</Link>
+          <Link to="/web" className="btn-primary" style={{ textDecoration: 'none', background: '#333' }}>App Móvil (Antigua)</Link>
+          <Link to="/online" className="btn-primary" style={{ textDecoration: 'none' }}>Sitio Web (En Línea)</Link>
         </div>
       </div>
     </div>
@@ -29,6 +31,7 @@ export default function App() {
         <Route path="/pos" element={<POSApp />} />
         <Route path="/kitchen" element={<KitchenApp />} />
         <Route path="/web" element={<WebApp />} />
+        <Route path="/online" element={<OnlineStore />} />
       </Routes>
     </BrowserRouter>
   );
